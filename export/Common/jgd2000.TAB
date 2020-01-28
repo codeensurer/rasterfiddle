@@ -1,0 +1,17 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 5
+    MeshCode Integer Index 1 ;
+    dB_sec1 Float ;
+    dL_sec1 Float ;
+    dB_sec2 Float ;
+    dL_sec2 Float ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "b25c202e-8278-4963-b006-f77dd10cbe1a"
+end_metadata

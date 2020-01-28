@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+  WkbGeometry.cpp
+  WktConvert.cpp
+  CommandLine.cpp
+  EFALUtilities.cpp
+  hpslib.cpp
+  textfile.cpp
+  Text2TAB.cpp
+  TextProcessing.cpp
+  Transaction.cpp
+  Generating Code...
+  Text2TAB.vcxproj -> D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\Text2TAB\x64\Debug\Text2TAB.exe

@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+  WkbGeometry.cpp
+  WkbTester.cpp
+  WKT2WKB.cpp
+  WktConvert.cpp
+  Generating Code...
+  WKT2WKB.vcxproj -> D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\WKT2WKB\x64\Debug\WKT2WKB.exe

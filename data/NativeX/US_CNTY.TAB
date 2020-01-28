@@ -1,0 +1,14 @@
+!table
+!version 1520
+!charset WindowsLatin1
+
+Definition Table
+  Type NativeX charset "WindowsLatin1" locale "en-US"
+  Fields 3
+    County char (40) Index 1 ;
+    State char (2) ;
+    Fips_code char (5) Index 2 ;
+begin_metadata
+"\MapInfo" = ""
+"\MapInfo\TableID" = "125dd8e0-0d87-465e-9054-3356987a0519"
+end_metadata

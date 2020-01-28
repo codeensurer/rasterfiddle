@@ -1,0 +1,23 @@
+﻿  x64-Debug
+  ux64
+  copy /Y sample_commands.txt  ..\..\..\export\ux64
+  copy /Y runJFAL.bat  ..\..\..\export\ux64
+  copy /Y ..\EFALShell\x64\Debug\EFALShell.exe  ..\..\..\export\ux64
+  copy /Y ..\NFAL\x64\Debug\NFAL.dll  ..\..\..\export\ux64
+  copy /Y ..\NFALShell\bin\x64\Debug\NFALShell.exe  ..\..\..\export\ux64
+  copy /Y ..\JFAL\x64\Debug\*.DLL ..\..\..\export\ux64
+  copy /Y ..\JFAL\x64\Debug\*.JAR ..\..\..\export\ux64
+  copy /Y ..\Text2TAB\x64\Debug\Text2TAB.exe  ..\..\..\export\ux64
+  copy /Y ..\WKT2WKB\x64\Debug\WKT2WKB.exe  ..\..\..\export\ux64
+          1 file(s) copied.
+          1 file(s) copied.
+          1 file(s) copied.
+          1 file(s) copied.
+          1 file(s) copied.
+          1 file(s) copied.
+          1 file(s) copied.
+  ..\JFAL\x64\Debug\JFAL.dll
+          1 file(s) copied.
+  ..\JFAL\x64\Debug\JFALJNI.jar
+  ..\JFAL\x64\Debug\JFALShell.jar
+          2 file(s) copied.

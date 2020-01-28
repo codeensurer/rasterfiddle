@@ -1,0 +1,13 @@
+﻿!table
+!version 1520
+!charset UTF-8
+
+Definition Table
+  Type GPKG
+begin_metadata
+"\Geopackage" = ""
+"\Geopackage\DatabasePath" = "USA.gpkg"
+"\Geopackage\TableName" = "US_HIWAY"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "8846c38a-e193-42c4-8cd3-7cf1420c72ab"
+end_metadata

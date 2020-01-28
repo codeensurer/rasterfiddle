@@ -1,0 +1,13 @@
+﻿!table
+!version 1520
+!charset UTF-8
+
+Definition Table
+  Type GPKG
+begin_metadata
+"\Geopackage" = ""
+"\Geopackage\DatabasePath" = "USA.gpkg"
+"\Geopackage\TableName" = "USA_CAPS"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "19326ca5-29f1-4d4a-a394-3025973f9fef"
+end_metadata

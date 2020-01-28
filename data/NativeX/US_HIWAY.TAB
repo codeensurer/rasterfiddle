@@ -1,0 +1,12 @@
+!table
+!version 1520
+!charset WindowsLatin1
+
+Definition Table
+  Type NativeX charset "WindowsLatin1" locale "en-US"
+  Fields 1
+    Highway char (50) Index 1 ;
+begin_metadata
+"\MapInfo" = ""
+"\MapInfo\TableID" = "ea960963-144e-48b4-98fd-cd2e7d60d54e"
+end_metadata

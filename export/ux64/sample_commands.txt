@@ -1,0 +1,65 @@
+# ----------------------------------------------------------
+# Sample EFALShell (or JFALShell) command file
+# ----------------------------------------------------------
+# This script will open a series of tables and issue several
+# commands that will demonstrate how to use EFALShell commands.
+# The sample data is provided in 3 formats: MapInfo TAB (Native),
+# MapInfo Enhanced (NativeX), and OGC GeoPackage. 
+# ----------------------------------------------------------
+' open the source tables
+open ..\..\data\nativex\USA.TAB
+open ..\..\data\nativex\USA_CAPS.TAB
+open ..\..\data\nativex\USCTY_1K.TAB
+open ..\..\data\nativex\US_CNTY.TAB
+open ..\..\data\nativex\US_HIWAY.TAB
+' 
+' List the catalog of opened tables and then display the metadata
+' for each
+tables
+desc USA
+desc USA_CAPS
+desc USCTY_1K
+desc US_CNTY
+desc US_HIWAY
+'
+close US_HIWAY
+tables
+'
+' Issue a few queries against the tables
+'
+SELECT count(*) FROM USA
+SELECT STATE, Count(*) FROM US_CNTY GROUP BY STATE
+SELECT STATE, Count(*) FROM US_CNTY GROUP BY STATE ORDER BY 2
+SELECT STATE, POP_1990 FROM USA_CAPS WHERE POP_1990 > 500000 ORDER BY POP_1990
+'
+' Join Query
+'
+SELECT A.City as City, B.State_Name as StateName FROM USCTY_1K as A, USA as B WHERE A.STATE = B.STATE and B.STATE_NAME = 'NEW YORK'
+'
+' Demonstrate use of variables in SQL statements
+'
+set @pop=500000
+show @pop
+show
+SELECT STATE, POP_1990 FROM USA_CAPS WHERE POP_1990 > @pop ORDER BY POP_1990
+set @NY=SELECT OBJ FROM USA WHERE STATE = 'NY'
+show @NY
+SELECT City FROM USCTY_1K WHERE Obj within @NY
+'
+' Save a copy of USA (we will use it to demonstrate INSERT, UPDATE, and DELETE commands)
+'
+Save table USA in TEMPUSA.tab
+desc TEMPUSA
+SELECT Count(*) FROM TEMPUSA
+'
+DELETE FROM TEMPUSA WHERE STATE = 'FL'
+SELECT Count(*) FROM TEMPUSA
+'
+SELECT STATE, STATE_NAME FROM TEMPUSA WHERE STATE = 'NY'
+UPDATE TEMPUSA SET State_Name = 'New York' WHERE STATE = 'NY'
+SELECT STATE, STATE_NAME FROM TEMPUSA WHERE STATE = 'NY'
+'
+INSERT INTO TEMPUSA (STATE, STATE_NAME, OBJ) VALUES ('FB', 'Foo Bar', @NY)
+SELECT Count(*) FROM TEMPUSA
+select * from TEMPUSA Where STATE='FB'
+

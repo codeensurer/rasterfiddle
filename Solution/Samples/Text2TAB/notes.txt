@@ -1,0 +1,58 @@
+Wish list / TODO
+
+Test Geopackage - VERY SLOW, Why?
+Default Theme in TAB file
+
+
+"-default_style:Pen (1, 1, 16777215) Brush (2, 16316906, 16777215) Symbol (33,32768,18,\"MapInfo Miscellaneous\",256,0)"
+
+
+
+set PATH=c:\work\mapxtreme\efal_port\trunk\export\ux64;C:\Work\Data\PB\vs\Text2TAB\x64\Release;%PATH%
+cd \work\data\pb\test
+
+REM -------------------------------------------------------------
+REM Count the lines in the input table
+REM -------------------------------------------------------------
+text2tab -input_file:wppoi_irl_sample.txt -linecount_only
+
+REM -------------------------------------------------------------
+REM Show the fields
+REM -------------------------------------------------------------
+cls & text2tab -input_file:wppoi_irl_sample.txt -has_header -output_alias:test 
+
+REM -------------------------------------------------------------
+REM Increase sample size
+REM -------------------------------------------------------------
+cls & text2tab -input_file:wppoi_irl_sample.txt -has_header -output_alias:test -sample_size:2000 -process
+
+REM -------------------------------------------------------------
+REM Process 200 records
+REM -------------------------------------------------------------
+cls & text2tab -input_file:wppoi_irl_sample.txt -has_header -output_alias:test -sample_size:2000 -max_records:200 -process
+
+REM -------------------------------------------------------------
+REM Filter to only process CHURCH records
+REM -------------------------------------------------------------
+cls & text2tab -input_file:wppoi_irl_sample.txt -has_header -output_alias:test -sample_size:2000 -max_records:200 "-filter_include:@SIC8_description='CHURCH'" -process
+
+REM -------------------------------------------------------------
+REM Look up style using MICODE lookup table
+REM -------------------------------------------------------------
+cls & text2tab -input_file:wppoi_irl_sample.txt -has_header -output_alias:test -sample_size:2000 -max_records:200 -style_table:C:\Work\Data\PB\micode\MiCode_to_MiStyle_list.TAB  -style_table_join_column:MiCode -style_join_column:miCode -style_table_style_column:miStyle
+
+REM -------------------------------------------------------------
+REM Split into multiple TAB files
+REM -------------------------------------------------------------
+cls & text2tab -input_file:wppoi_irl_sample.txt -has_header -output_alias:test -sample_size:2000 -split_on:GROUP -max_records:2000 -process
+
+REM -------------------------------------------------------------
+REM WKT
+REM -------------------------------------------------------------
+cls & text2tab -input_file:wkt.txt -has_header -output_alias:test_wkt 
+cls & text2tab -input_file:wkt.txt -has_header -output_alias:test_wkt -style:style
+cls & text2tab -input_file:wkt.txt -has_header -output_alias:test_wkt -style:style -process
+
+
+text2tab -input_file:wkt.txt -has_header -output_alias:test_wkt -sample_size:2000 -output_format:GPKG -output_gpkg_dbname:samples.gpkg -process
+text2tab -input_file:wppoi_irl_sample.txt -has_header -output_alias:test -sample_size:2000 -output_format:GPKG -output_gpkg_dbname:samples.gpkg -process

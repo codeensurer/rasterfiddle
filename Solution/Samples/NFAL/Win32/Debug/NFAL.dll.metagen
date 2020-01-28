@@ -1,0 +1,273 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly NFAL, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct MapInfo.NFAL.EFALDATE: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 year : Public
+    Int32 month : Public
+    Int32 day : Public
+Struct MapInfo.NFAL.EFALTIME: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 hour : Public
+    Int32 minute : Public
+    Int32 second : Public
+    Int32 millisecond : Public
+Struct MapInfo.NFAL.EFALDATETIME: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 year : Public
+    Int32 month : Public
+    Int32 day : Public
+    Int32 hour : Public
+    Int32 minute : Public
+    Int32 second : Public
+    Int32 millisecond : Public
+Class MapInfo.NFAL.ResourceStringDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class MapInfo.NFAL.ResourceStringDelegateCallback: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(MapInfo.NFAL.ResourceStringDelegate): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    UmResourceStringCallback(Char*): PrivateScope, Public, HideBySig
+Class MapInfo.NFAL.NFAL: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetCursorValueInt64(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorValueInt32(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorValueInt16(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorValueStyle(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    PrepareCursorValueBinary(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    PrepareCursorValueGeometry(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorValueTimespanInMilliseconds(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorValueDate(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorValueTime(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorValueDateTime(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    CreateVariable(UInt64, String): PrivateScope, Public, Static, HideBySig
+    DropVariable(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableCount(UInt64): PrivateScope, Public, Static, HideBySig
+    GetVariableName(UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetVariableType(UInt64, String): PrivateScope, Public, Static, HideBySig
+    SetVariableValue(UInt64, String, String): PrivateScope, Public, Static, HideBySig
+    GetVariableIsNull(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableValueString(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableValueBoolean(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableValueDouble(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableValueInt64(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableValueInt32(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableValueInt16(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableValueStyle(UInt64, String): PrivateScope, Public, Static, HideBySig
+    PrepareVariableValueBinary(UInt64, String): PrivateScope, Public, Static, HideBySig
+    PrepareVariableValueGeometry(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableColumnCSys(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableValueTimespanInMilliseconds(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableValueDate(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableValueTime(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetVariableValueDateTime(UInt64, String): PrivateScope, Public, Static, HideBySig
+    SetVariableIsNull(UInt64, String): PrivateScope, Public, Static, HideBySig
+    SetVariableValueString(UInt64, String, String): PrivateScope, Public, Static, HideBySig
+    SetVariableValueBoolean(UInt64, String, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    SetVariableValueDouble(UInt64, String, Double): PrivateScope, Public, Static, HideBySig
+    SetVariableValueInt64(UInt64, String, Int64): PrivateScope, Public, Static, HideBySig
+    SetVariableValueInt32(UInt64, String, Int32 IsLong): PrivateScope, Public, Static, HideBySig
+    SetVariableValueInt16(UInt64, String, Int16): PrivateScope, Public, Static, HideBySig
+    SetVariableValueStyle(UInt64, String, String): PrivateScope, Public, Static, HideBySig
+    SetVariableValueBinary(UInt64, String, Byte[]): PrivateScope, Public, Static, HideBySig
+    SetVariableValueGeometry(UInt64, String, Byte[], String): PrivateScope, Public, Static, HideBySig
+    SetVariableValueTimespanInMilliseconds(UInt64, String, Double): PrivateScope, Public, Static, HideBySig
+    SetVariableValueDate(UInt64, String, EFALDATE): PrivateScope, Public, Static, HideBySig
+    SetVariableValueTime(UInt64, String, EFALTIME): PrivateScope, Public, Static, HideBySig
+    SetVariableValueDateTime(UInt64, String, EFALDATETIME): PrivateScope, Public, Static, HideBySig
+    InitializeSession(ResourceStringDelegate): PrivateScope, Public, Static, HideBySig
+    DestroySession(UInt64): PrivateScope, Public, Static, HideBySig
+    GetData(UInt64, Byte[]): PrivateScope, Public, Static, HideBySig
+    HaveErrors(UInt64): PrivateScope, Public, Static, HideBySig
+    ClearErrors(UInt64): PrivateScope, Public, Static, HideBySig
+    NumErrors(UInt64): PrivateScope, Public, Static, HideBySig
+    GetError(UInt64, Int32): PrivateScope, Public, Static, HideBySig
+    CloseAll(UInt64): PrivateScope, Public, Static, HideBySig
+    OpenTable(UInt64, String): PrivateScope, Public, Static, HideBySig
+    CloseTable(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    BeginReadAccess(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    BeginWriteAccess(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    EndAccess(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetTableCount(UInt64): PrivateScope, Public, Static, HideBySig
+    GetTableHandle(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetTableHandle(UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    SupportsPack(UInt64, UInt64, ETablePackType): PrivateScope, Public, Static, HideBySig
+    Pack(UInt64, UInt64, ETablePackType): PrivateScope, Public, Static, HideBySig
+    GetTableName(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetTableDescription(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetTablePath(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetTableGUID(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetTableCharset(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    HasRaster(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    HasGrid(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    IsSeamless(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    IsVector(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    SupportsInsert(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    SupportsUpdate(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    SupportsDelete(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    SupportsBeginAccess(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetReadVersion(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetEditVersion(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetColumnCount(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetColumnName(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetColumnType(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetColumnWidth(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetColumnDecimals(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    IsColumnIndexed(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    IsColumnReadOnly(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetColumnCSys(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetEntireBounds(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetDefaultView(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetPointObjectCount(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetLineObjectCount(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetAreaObjectCount(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetMiscObjectCount(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    HasZ(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    IsZRangeKnown(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetZRange(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    HasM(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    IsMRangeKnown(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetMRange(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetMetadata(UInt64, UInt64, String): PrivateScope, Public, Static, HideBySig
+    EnumerateMetadata(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    DisposeMetadataEnumerator(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetNextEntry(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetCurrentMetadataKey(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetCurrentMetadataValue(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    SetMetadata(UInt64, UInt64, String, String): PrivateScope, Public, Static, HideBySig
+    DeleteMetadata(UInt64, UInt64, String): PrivateScope, Public, Static, HideBySig
+    WriteMetadata(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    CreateNativeTableMetadata(UInt64, String, String, MICHARSET): PrivateScope, Public, Static, HideBySig
+    CreateNativeXTableMetadata(UInt64, String, String, MICHARSET): PrivateScope, Public, Static, HideBySig
+    CreateGeopackageTableMetadata(UInt64, String, String, String, MICHARSET, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    AddColumn(UInt64, UInt64, String, ALLTYPE_TYPE, Boolean(HasFieldMarshal), UInt32 IsLong, UInt32 IsLong, String): PrivateScope, Public, Static, HideBySig
+    CreateTable(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    DestroyTableMetadata(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    CreateSeamlessTable(UInt64, String, String, MICHARSET): PrivateScope, Public, Static, HideBySig
+    AddSeamlessComponentTable(UInt64, UInt64, String, DRECT): PrivateScope, Public, Static, HideBySig
+    Select(UInt64, String): PrivateScope, Public, Static, HideBySig
+    FetchNext(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    DisposeCursor(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    Insert(UInt64, String): PrivateScope, Public, Static, HideBySig
+    Update(UInt64, String): PrivateScope, Public, Static, HideBySig
+    Delete(UInt64, String): PrivateScope, Public, Static, HideBySig
+    GetCursorColumnCount(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetCursorColumnName(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorColumnType(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorColumnCSys(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorCurrentKey(UInt64, UInt64): PrivateScope, Public, Static, HideBySig
+    GetCursorIsNull(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorValueString(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorValueBoolean(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+    GetCursorValueDouble(UInt64, UInt64, UInt32 IsLong): PrivateScope, Public, Static, HideBySig
+Struct MapInfo.NFAL.MICHARSET: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MapInfo.NFAL.MICHARSET CHARSET_NONE = -1 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_NEUTRAL = 0 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_ISO8859_1 = 1 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_ISO8859_2 = 2 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_ISO8859_3 = 3 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_ISO8859_4 = 4 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_ISO8859_5 = 5 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_ISO8859_6 = 6 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_ISO8859_7 = 7 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_ISO8859_8 = 8 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_ISO8859_9 = 9 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WLATIN1 = 10 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WLATIN2 = 11 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WARABIC = 12 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WCYRILLIC = 13 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WGREEK = 14 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WHEBREW = 15 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WTURKISH = 16 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WTCHINESE = 17 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WSCHINESE = 18 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WJAPANESE = 19 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WKOREAN = 20 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_CP437 = 34 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_CP850 = 35 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_CP852 = 36 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_CP857 = 37 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_CP860 = 38 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_CP861 = 39 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_CP863 = 40 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_CP865 = 41 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_CP855 = 42 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_CP864 = 43 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_CP869 = 44 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WTHAI = 54 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WBALTICRIM = 55 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_WVIETNAMESE = 56 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_UTF8 = 57 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.MICHARSET CHARSET_UTF16 = 58 : Public, Static, Literal, HasDefault
+Struct MapInfo.NFAL.ALLTYPE_TYPE: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MapInfo.NFAL.ALLTYPE_TYPE OT_NONE = 0 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_CHAR = 1 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_DECIMAL = 2 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_INTEGER = 3 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_SMALLINT = 4 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_DATE = 5 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_LOGICAL = 6 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_FLOAT = 8 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_MEMO = 9 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_PCHAR = 10 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_PEN = 11 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_BRUSH = 12 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_OBJECT = 13 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_SYMBOL = 14 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_FONT = 15 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_FLSTRING = 16 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_NULL = 17 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_KEY = 18 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_KEYWORD = 20 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_IDENT = 21 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_SUBEDIDENT = 22 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_PIDENT = 24 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_BINARY = 27 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_ARRAY = 28 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_STRUCT = 29 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_PARAMETER = 30 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_SUBSELECT = 31 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_DEPSUBSELECT = 32 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_VARBYVAL = 33 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_VARBYREF = 34 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_STYLE = 36 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_RASTER = 37 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_GRID = 38 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_WMS = 39 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_INTEGER64 = 40 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_TIMESPAN = 41 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_TIME = 42 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ALLTYPE_TYPE OT_DATETIME = 43 : Public, Static, Literal, HasDefault
+Struct MapInfo.NFAL.ETablePackType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MapInfo.NFAL.ETablePackType eTablePackTypePackGraphics = 1 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ETablePackType eTablePackTypeRebuildGraphics = 2 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ETablePackType eTablePackTypePackIndex = 4 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ETablePackType eTablePackTypeRebuildIndex = 8 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ETablePackType eTablePackTypeRemoveDeletedRecords = 16 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ETablePackType eTablePackTypeCompactDB = 32 : Public, Static, Literal, HasDefault
+    MapInfo.NFAL.ETablePackType eTablePackTypeAll = 21 : Public, Static, Literal, HasDefault

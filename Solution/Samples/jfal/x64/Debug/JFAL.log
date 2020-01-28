@@ -1,0 +1,47 @@
+﻿  Could Not Find D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\JFAL\*.java
+  Could Not Find D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\JFAL\*.class
+  Could Not Find D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\JFAL\*.jar
+  Performing Custom Build Tools
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(231,5): warning MSB8065: Custom build for item "JFAL.i" succeeded, but specified output "d:\work\upgrade2019\3rdparty\efal\solution\samples\jfal\_wrap.cxx" has not been created. This may cause incremental build to work incorrectly.
+  JFAL_wrap.cxx
+     Creating library x64\Debug\JFAL.lib and object x64\Debug\JFAL.exp
+  JFAL.vcxproj -> D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\JFAL\x64\Debug\JFAL.dll
+  Java compile post-build step
+  Picked up _JAVA_OPTIONS: -Xmx2048M -Xms2048M
+  added manifest
+  adding: ALLTYPE_TYPE$SwigNext.class(in = 481) (out= 307)(deflated 36%)
+  adding: ALLTYPE_TYPE.class(in = 3245) (out= 1698)(deflated 47%)
+  adding: CalloutLineType$SwigNext.class(in = 490) (out= 309)(deflated 36%)
+  adding: CalloutLineType.class(in = 2134) (out= 1122)(deflated 47%)
+  adding: DIST_CALC_TYPE$SwigNext.class(in = 487) (out= 310)(deflated 36%)
+  adding: DIST_CALC_TYPE.class(in = 2076) (out= 1093)(deflated 47%)
+  adding: DPNT.class(in = 1050) (out= 610)(deflated 41%)
+  adding: DRANGE.class(in = 1088) (out= 621)(deflated 42%)
+  adding: DRECT.class(in = 1399) (out= 699)(deflated 50%)
+  adding: EFALDATE.class(in = 1297) (out= 681)(deflated 47%)
+  adding: EFALDATETIME.class(in = 2141) (out= 886)(deflated 58%)
+  adding: EFALTIME.class(in = 1520) (out= 728)(deflated 52%)
+  adding: ETablePackType$SwigNext.class(in = 487) (out= 307)(deflated 36%)
+  adding: ETablePackType.class(in = 2714) (out= 1336)(deflated 50%)
+  adding: JFAL.class(in = 19684) (out= 6249)(deflated 68%)
+  adding: JFALJNI.class(in = 13374) (out= 4394)(deflated 67%)
+  adding: LPNT.class(in = 1050) (out= 609)(deflated 42%)
+  adding: LRECT.class(in = 1399) (out= 698)(deflated 50%)
+  adding: MICHARSET$SwigNext.class(in = 472) (out= 304)(deflated 35%)
+  adding: MICHARSET.class(in = 5584) (out= 2599)(deflated 53%)
+  adding: MIUNIT$SwigNext.class(in = 463) (out= 300)(deflated 35%)
+  adding: MIUNIT.class(in = 4258) (out= 2228)(deflated 47%)
+  adding: SWIGTYPE_p_f_p_q_const__wchar_t__p_wchar_t.class(in = 506) (out= 313)(deflated 38%)
+  adding: SWIGTYPE_p_int.class(in = 422) (out= 291)(deflated 31%)
+  adding: SWIGTYPE_p_long_long.class(in = 440) (out= 295)(deflated 32%)
+  adding: SWIGTYPE_p_void.class(in = 425) (out= 294)(deflated 30%)
+  adding: WKBGeometryType$SwigNext.class(in = 490) (out= 312)(deflated 36%)
+  adding: WKBGeometryType.class(in = 5903) (out= 2741)(deflated 53%)
+  Picked up _JAVA_OPTIONS: -Xmx2048M -Xms2048M
+  JFALShell\JFALShell.java
+          1 file(s) copied.
+  Picked up _JAVA_OPTIONS: -Xmx2048M -Xms2048M
+  added manifest
+  adding: JFALShell$1.class(in = 3406) (out= 1512)(deflated 55%)
+  adding: JFALShell.class(in = 29560) (out= 13789)(deflated 53%)
+  Picked up _JAVA_OPTIONS: -Xmx2048M -Xms2048M

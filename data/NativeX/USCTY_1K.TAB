@@ -1,0 +1,13 @@
+!table
+!version 1520
+!charset WindowsLatin1
+
+Definition Table
+  Type NativeX charset "WindowsLatin1" locale "en-US"
+  Fields 2
+    City char (40) ;
+    State char (2) ;
+begin_metadata
+"\MapInfo" = ""
+"\MapInfo\TableID" = "4d2dae92-09ee-459a-8ede-0dd09ab57bea"
+end_metadata

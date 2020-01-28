@@ -1,0 +1,2 @@
+^D:\WORK\UPGRADE2019\3RDPARTY\EFAL\SOLUTION\SAMPLES\JFAL\JFAL.I
+swig.exe -ID:\Work\upgrade2019\3rdParty\efal\Solution\Samples\JFAL\..\EFAL\include -c++ -java "D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\JFAL\JFAL.i"

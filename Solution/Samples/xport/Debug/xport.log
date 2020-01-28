@@ -1,0 +1,26 @@
+﻿  Win32-Debug
+  uw32
+  copy /Y sample_commands.txt  ..\..\..\export\uw32
+  copy /Y runJFAL.bat  ..\..\..\export\uw32
+  copy /Y ..\EFALShell\Win32\Debug\EFALShell.exe  ..\..\..\export\uw32
+  copy /Y ..\NFAL\Win32\Debug\NFAL.dll  ..\..\..\export\uw32
+  copy /Y ..\NFALShell\bin\x86\Debug\NFALShell.exe  ..\..\..\export\uw32
+  copy /Y ..\JFAL\Win32\Debug\*.DLL ..\..\..\export\uw32
+  copy /Y ..\JFAL\Win32\Debug\*.JAR ..\..\..\export\uw32
+  copy /Y ..\Text2TAB\Win32\Debug\Text2TAB.exe  ..\..\..\export\uw32
+  copy /Y ..\WKT2WKB\Win32\Debug\WKT2WKB.exe  ..\..\..\export\uw32
+          1 file(s) copied.
+          1 file(s) copied.
+  The system cannot find the path specified.
+  The system cannot find the path specified.
+          1 file(s) copied.
+          1 file(s) copied.
+          1 file(s) copied.
+  The system cannot find the file specified.
+  ..\JFAL\Win32\Debug\*.DLL 
+          0 file(s) copied.
+  The system cannot find the file specified.
+  ..\JFAL\Win32\Debug\*.JAR 
+          0 file(s) copied.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(139,5): error MSB3073: The command "xport.bat Win32 Debug
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(139,5): error MSB3073: :VCEnd" exited with code 1.

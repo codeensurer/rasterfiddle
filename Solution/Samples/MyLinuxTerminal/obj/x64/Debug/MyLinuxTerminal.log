@@ -1,0 +1,7 @@
+﻿  Starting remote build
+  Compiling sources:
+  SimpleCSV.cpp
+D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\SimpleCSV\targetver.h(8,10): error : SDKDDKVer.h: No such file or directory
+  stdafx.cpp
+D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\SimpleCSV\targetver.h(8,10): error : SDKDDKVer.h: No such file or directory
+  main.cpp

@@ -1,0 +1,9 @@
+D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\NFALShell\bin\x86\Debug\NFALShell.exe.config
+D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\NFALShell\bin\x86\Debug\NFALShell.exe
+D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\NFALShell\bin\x86\Debug\NFALShell.pdb
+D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\NFALShell\bin\x86\Debug\NFAL.dll
+D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\NFALShell\bin\x86\Debug\NFAL.pdb
+D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\NFALShell\obj\x86\Debug\NFALShell.csprojAssemblyReference.cache
+D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\NFALShell\obj\x86\Debug\NFALShell.csproj.CopyComplete
+D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\NFALShell\obj\x86\Debug\NFALShell.exe
+D:\Work\upgrade2019\3rdParty\efal\Solution\Samples\NFALShell\obj\x86\Debug\NFALShell.pdb

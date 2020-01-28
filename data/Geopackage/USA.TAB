@@ -1,0 +1,13 @@
+﻿!table
+!version 1520
+!charset UTF-8
+
+Definition Table
+  Type GPKG
+begin_metadata
+"\Geopackage" = ""
+"\Geopackage\DatabasePath" = "USA.gpkg"
+"\Geopackage\TableName" = "USA"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "f05f98e4-6bf0-40d3-8041-70be5999a181"
+end_metadata

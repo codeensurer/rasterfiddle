@@ -1,0 +1,16 @@
+!table
+!version 1520
+!charset WindowsLatin1
+
+Definition Table
+  Type NativeX charset "WindowsLatin1" locale "en-US"
+  Fields 5
+    Capital char (40) Index 1 ;
+    State char (2) ;
+    FIPS_Code char (2) ;
+    Pop_1990 decimal (11, 0) ;
+    Num_HU_90 decimal (11, 0) ;
+begin_metadata
+"\MapInfo" = ""
+"\MapInfo\TableID" = "ca3cac5a-6e8c-4ab5-b48a-44647cf1845e"
+end_metadata
